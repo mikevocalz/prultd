@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "Grid Hub",
+    "slug": "grid-hub",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "grid-hub",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.solito.nativewind",
+      "requireFullScreen": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package":"com.solito.nativewind"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+       "react-native-bottom-tabs",
+     [
+      "expo-build-properties",
+       {
+         "ios": {
+           "useFrameworks": "static",
+             "deploymentTarget": "16.0"
+         }
+        }      
+      ],
+       [
+         "expo-screen-orientation",
+         {
+           "initialOrientation": "PORTRAIT_UP"
+         }
+       ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
