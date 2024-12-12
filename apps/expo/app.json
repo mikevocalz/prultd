@@ -27,7 +27,7 @@
     },
     "web": {
       "bundler": "metro",
-      "output": "static",
+      "output": "single",
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
@@ -50,7 +50,10 @@
        ]
     ],
     "experiments": {
-      "typedRoutes": true
+      "typedRoutes": true,
+      "reactCanary": true,
+      "reactCompiler": true,
+      "reactServerFunctions": true
     }
   }
 }
